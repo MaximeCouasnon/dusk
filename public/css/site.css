@@ -1,0 +1,63 @@
+root {
+    display: block;
+}
+
+html {
+    background-color: #300000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-width: 990px;
+    min-height: 500px;
+    margin: 15px 10px 15px 10px;
+    background-color: #ffffb3;
+}
+
+#header {
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid;
+}
+
+#menu-h table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#menu-h table td {
+    width: 25%;
+}
+
+/*#menu {
+    float: left;
+    width: 210px;
+}*/
+
+#content {
+}
+
+#footer {
+    text-align: center;
+    border-top: 1px solid;
+}
+
+#case-portrait {
+    width: 200px;
+    height: 200px;
+}
+
+a img {
+    border-style: none;
+}
+
+a {
+    color: maroon;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

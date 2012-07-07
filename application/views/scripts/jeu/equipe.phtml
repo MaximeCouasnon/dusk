@@ -1,0 +1,74 @@
+<?php
+function ecrireProfil($vue,$id) {
+    if(isset($vue->equipe[$id])) {
+    ?>
+    <td style="width:50%;height:33%">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img src="" alt="" />
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <ul type="none">
+                                    <li><strong><?php print_r($vue->equipe[$id]['nom']) ?></strong></li>
+                                    <li><?php echo convertFaction($vue->equipe[$id]['origine']) ?></li>
+                                    <li>Salaire : <?php print_r($vue->equipe[$id]['salaire']) ?></li>
+                                    <li>Moral : <?php echo convertMoral($vue->equipe[$id]['moral']) ?></li>
+                                    <li>État : <?php echo convertSante($vue->equipe[$id]['sante']) ?></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul type="none">
+                                    <li>Brutalité : <?php echo $vue->equipe[$id]['brutalite'] ?></li>
+                                    <li>Finesse : <?php echo $vue->equipe[$id]['finesse'] ?></li>
+                                    <li>Discipline : <?php echo $vue->equipe[$id]['discipline'] ?></li>
+                                    <li>Constitution : <?php echo $vue->equipe[$id]['constitution'] ?></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:center; width:100%">
+                    <button>Fiche</button>
+                    <a href="<?php echo $vue->url(array('action'=>'renvoi','id'=>$vue->equipe[$id]['id'])) ?>"><button>Supprimer</button></a>
+                </td>
+            </tr>
+        </table>
+    </td>
+    <?php
+    }
+    else {
+    ?>
+    <td style="background-color:gray" />
+    <?php
+    }
+}
+?>
+<table style="width:100%;height:100%">
+    <tr>
+        <?php
+            ecrireProfil($this,0);
+            ecrireProfil($this,1);
+        ?>
+    </tr>
+    <tr>
+        <?php
+            ecrireProfil($this,2);
+            ecrireProfil($this,3);
+        ?>
+    </tr>
+    <tr>
+        <?php
+            ecrireProfil($this,4);
+            ecrireProfil($this,5);
+        ?>
+    </tr>
+</table>
+<script type="text/javascript">
+document.getElementById('cadre').style.height=(0.426*document.documentElement.clientWidth)+'px';
+</script>

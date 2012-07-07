@@ -1,0 +1,51 @@
+<table width="100%">
+    <tr>
+        <td style="vertical-align: top; width:20%">
+            <table style="float:right;">
+                <tr>
+                    <td>
+                        <a href="<?php echo $this->url(array('action'=>'index')) ?>">
+                            <img src="<?php echo $this->baseUrl()."/public/images/avatars/".$this->avatar.".jpg" ?>" alt="" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Argent : x</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Expérience : x</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Réputation : x</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="<?php echo $this->url(array('action'=>'equipe')) ?>">Équipe</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="<?php echo $this->url(array('action'=>'recrutement')) ?>">Recrutement</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <?php $mission=generationMission(null, null) ?>
+                        <a href="<?php echo $this->url(array('action'=>'mission'))."/id/".$mission['id'] ?>">Mission : <?php echo convertTypeMission($mission['type'])." ".$mission['s'] ?></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <div id="cadre"style="float:left;width:80%;">
+                <?php echo $this->layout()->content; ?>
+            </div>
+        </td>
+    </tr>
+</table>

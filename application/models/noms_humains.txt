@@ -1,0 +1,4 @@
+Lucia,Laurentia,Guarina,Katarina,Marina,Victoria,Adepta,Desiderata,Veritas,Diaria,Regula,Bellatrix,Melissa,Quitteria,Nysa,Iolana,Emilia,Nubecula,Alix,Severa,Pieris,Irena,Silvia,Probitas,Diecula,Evata,Adeses,Fortuna,Felicitas,Dialis
+Adustus,Mael,Titus,Marcus,Alexander,Donatus,Nuratus,Bellator,Ephraem,Lucius,Fraus,Raimundus,Fervor,Forter,Quirin,Marneus,Herous,Pius,Ieremias,Adrianus,Paschalis,Ivo,Gregorius,Nereus,Canneus,Felix,Noemer,Leo,Tomas,Melanus,Martinus
+Domitius,Temperate,Faberi,Talis,Pagatim,Daemon,Pallori,Vertex,Pertinax,Obliti,Colorate,Obluctor,Cerboro,Repexus,Carnifex,Racemifer,Caryon,Excelse,Ophidi,Ignifex,Ligurio,Lichenis,Locuples,Lucifer,Loquax,Mundi,Macilente,Scintillo,Scipio,Regulus
+

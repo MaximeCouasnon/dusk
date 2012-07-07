@@ -1,0 +1,24 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+         <meta http-equiv="Pragma" content="no-cache" />
+         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+         <title><?php echo $this->titre; ?></title>
+         <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->baseUrl();?>/public/css/site.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <div id="banniere">
+                <?php echo $this->render('banniere.phtml'); ?>
+            </div>
+        </div>
+        <div id="centre">
+            <div id="content">
+                <?php echo $this->render('jeu.phtml'); ?>
+            </div>
+        </div>
+        <div id="footer">
+            <?php echo $this->render('footer.phtml'); ?>
+        </div>
+    </body>
+</html>
